@@ -2,9 +2,9 @@
 A collection of PowerShell (.ps1), batch (.bat), and Shell (.sh) scripts for managing system services, performing basic configurations, and automating administrative tasks.
 
 
-#Usage
+# Usage
 
-##StopAndDisableService
+## StopAndDisableService
 ``` ps1
 StopAndDisableService.ps1 <service-name>
 
