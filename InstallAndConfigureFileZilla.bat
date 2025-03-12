@@ -5,7 +5,7 @@ echo Slient install starting...
 
 FileZilla_Server.exe /S /user=all
 
-echo Kurulum tamamlandı!
+echo Installation complated!
 
 set "FZ_INSTALL_DIR=C:\Program Files (x86)\FileZilla Server"
 
@@ -16,7 +16,7 @@ set "CONFIG_FILE=FileZilla Server.xml"
 if exist "%CONFIG_FILE%" (
     echo Config found, copying...
 
-    rem Backup old config
+    rem Backing up old config file...
     if exist "%TARGET_CONFIG%" (
         echo Eski config dosyası bulundu, old.xml olarak yedekleniyor...
         rename "%TARGET_CONFIG%" "old.xml"
