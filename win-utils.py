@@ -60,7 +60,7 @@ def get_intel_gpu_info():
     try:
         c = wmi.WMI(namespace="root\\wmi")
         for gpu in c.MSAcpi_ThermalZoneTemperature():
-            print(f"Intel GPU Sıcaklık: {gpu.CurrentTemperature / 10.0}°C")  # WMI'nin verdiği sıcaklık değeri 10 ile bölünmeli
+            print(f"Intel GPU Sıcaklık: {gpu.CurrentTemperature / 10.0}°C")
         print()
     except Exception as e:
         print(f"Intel GPU bilgisi alınırken hata oluştu: {e}")
