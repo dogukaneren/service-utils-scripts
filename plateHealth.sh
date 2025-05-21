@@ -1,0 +1,1 @@
+watch 'echo "--- plates ---"; find /data/plates/ -type f | wc -l; echo "--- ftp ---"; find /data/ftp/ -type f | wc -l && echo "--- DB data count ---" && sudo -u postgres psql -d postgres -c "SELECT count(*) FROM plates;"'
