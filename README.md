@@ -22,3 +22,9 @@ StopAndDisableService.bat W3SVC
 ``` bat
 StopAndDisableWorldWideWeb.bat
 ```
+
+# Plate Health
+
+``` bash
+bash plate-health.sh
+```
