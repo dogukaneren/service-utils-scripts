@@ -24,7 +24,7 @@ Bu repoda, Windows/Linux sistemlerinde hizmet verecek sistem yöneticisi dostu y
 
 ### Python
 
-- `win-utils.py` – Windows sistem ayarlarını yapmak için yardımcı sınıflar.
+- `win-utils.py` – Windows sistem donanım bilgilerini görüntüleyen yardımcı script.
 
 ---
 
