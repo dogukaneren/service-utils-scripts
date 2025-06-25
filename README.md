@@ -1,30 +1,76 @@
 # service-utils-scripts
-A collection of PowerShell (.ps1), batch (.bat), and Shell (.sh) scripts for managing system services, performing basic configurations, and automating administrative tasks.
 
+Bu repoda, Windows/Linux sistemlerinde hizmet verecek sistem yöneticisi dostu yardımcı scriptler (PowerShell, Bash, Batch) yer almaktadır.
 
-# Usage
+---
 
-## StopAndDisableService
-``` ps1
-StopAndDisableService.ps1 <service-name>
+## İçerik
 
-#sample
-StopAndDisableService.ps1 W3SVC
+### Windows PowerShell / Batch
+
+- `StopAndDisableService.ps1` – Belirtilen servisi durdurur ve devre dışı bırakır.
+- `StopAndDisableWorldWideWeb.bat` – IIS üzerindeki WWW servislerini devre dışı bırakır.
+- `InstallAndConfigureFileZilla.bat` – FileZilla Server'ı indirip kurar ve yapılandırır.
+- `RecursiveRename.ps1` – Dosyaları toplu olarak yeniden adlandırır.
+- `PlateHealth.bat` – Sistem donanım sağlık verilerini gösterir (CPU, RAM, Disk).
+
+### Linux Bash
+
+- `mpymove.sh` – Dosyaları belirli kurallara göre taşır.
+- `plate-generator.sh` – Rasgele plaka dosyaları oluşturur.
+- `random-image-sender.sh` – Belirli dizinden rastgele resim yollar.
+- `wipe-tracks.sh` – Kullanıcı izlerini siler (log, bash history).
+- `plate-health.sh` – Linux sistem durumu (CPU, load, memory) raporlar.
+
+### Python
+
+- `win-utils.py` – Windows sistem ayarlarını yapmak için yardımcı sınıflar.
+
+---
+
+## 🔧 Kurulum
+
+> Scriptler çalıştırılmadan önce ilgili sistemde çalıştırma izinlerinin verilmiş olması gerekir.
+
+- Windows PowerShell için:
+  ```powershell
+  Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+  ```
+
+- Linux için:
+  ```bash
+  chmod +x *.sh
+  ```
+
+---
+
+## Kullanım Örnekleri
+
+```powershell
+# Servisi durdurmak
+.\StopAndDisableService.ps1 W3SVC
 ```
 
-``` bat
-StopAndDisableService.bat <service-name>
-
-#sample
-StopAndDisableService.bat W3SVC
+```batch
+:: FileZilla kurulumu
+InstallAndConfigureFileZilla.bat
 ```
 
-``` bat
-StopAndDisableWorldWideWeb.bat
+```bash
+# Rasgele plaka oluşturmak
+./plate-generator.sh -n 100
 ```
 
-# Plate Health
+---
 
-``` bash
-bash plate-health.sh
-```
+## 🛡 Lisans
+
+MIT Lisansı. Ayrıntılar için `LICENSE` dosyasına bakınız.
+
+---
+
+## 🤝 Katkıda Bulun
+
+1. Forkla ve branch aç
+2. Kodunu geliştir
+3. Pull Request gönder 🎯
