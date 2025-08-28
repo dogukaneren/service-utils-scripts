@@ -1,0 +1,10 @@
+<Connector port="443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+           maxThreads="200"
+           scheme="https" secure="true" SSLEnabled="true"
+           keystoreFile="/opt/tomcat/conf/keystore.p12"
+           keystoreType="PKCS12"
+           keystorePass="password"
+           redirectedPort="8443"
+           sslProtocol="TLS" />
+
+<!-- openssl pkcs12 -export -in cert.crt -inkey key.pem -out keystore.p12 -name tomcat | ile p12 crt ve pemden oluşturulabiliyor -->
