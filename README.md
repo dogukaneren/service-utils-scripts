@@ -61,6 +61,9 @@ InstallAndConfigureFileZilla.bat
 ./plate-generator.sh -n 100
 ```
 
+- Tomcat dizini altında tomcat configürasyonlarını bulabilirsiniz
+- Docker dizini altında konteynerleri bulabilirsiniz
+
 ---
 
 ## 🛡 Lisans
