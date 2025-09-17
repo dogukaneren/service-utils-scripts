@@ -62,7 +62,7 @@ InstallAndConfigureFileZilla.bat
 ```
 
 - Tomcat dizini altında tomcat configürasyonlarını bulabilirsiniz
-- Docker dizini altında konteynerleri bulabilirsiniz
+- Containers dizini altında Docker container için yaml dosyalarını bulabilirsiniz
 
 ---
 
