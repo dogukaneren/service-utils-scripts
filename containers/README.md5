@@ -1,4 +1,11 @@
-``` bash
+```bash
+docker build -t plate-api:v2.1 ./plate-api
+docker save -o plate-api-v2.1.tar plate-api:v2.1
+docker load -i plate-api-v2.1.tar
+```
+
+
+```bash
 docker compose down
 
 docker images
