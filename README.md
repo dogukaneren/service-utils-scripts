@@ -77,3 +77,12 @@ MIT Lisansı. Ayrıntılar için `LICENSE` dosyasına bakınız.
 1. Forkla ve branch aç
 2. Kodunu geliştir
 3. Pull Request gönder 🎯
+
+
+For ollama 
+``` bash
+python3 -m venv venv
+source venv/bin/activate
+pip install flask
+```
+
